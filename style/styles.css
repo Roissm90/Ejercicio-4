@@ -1,0 +1,607 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body.container-all {
+    width: 100%;
+}
+
+main.container-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    background-image: url(/assets/background-main.jpeg);
+    background-size: cover;
+    background-position: center;
+
+    width: 100%;
+    height: 100vh;
+
+    padding: 50px 0;
+}
+
+main > nav.container-nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 70%;
+    min-width: 450px;
+}
+
+main > nav > div.container__links-login {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 90%;
+    padding-bottom: 10px;
+
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+.content__icon-menu {
+    display: none;
+
+    width: 40px;
+    height: 40px;
+}
+
+main > nav > div.container__links-login > .content__icon-menu > img {
+    width: 100%;
+    height: 100%;
+    filter: invert(1);
+}
+
+main > nav > div:first-child > ul.content__links {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+main > nav > div:first-child > ul.content__links > li > a {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+
+    margin-left: 20px;
+}
+
+main > nav > div:first-child > div.content__login {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+}
+
+main > nav > div:first-child > div.content__login > img:first-child {
+    width: 40px;
+    height: 40px;
+
+    filter: invert(1);
+    cursor: pointer;
+
+    margin-right: 20px;
+}
+
+main > nav > div:first-child > div.content__login > img:nth-child(2) {
+    width: 30px;
+    height: 30px;
+
+    filter: invert(1);
+    cursor: pointer;
+
+    margin-right: 20px;
+}
+
+main > nav > div:first-child > div.content__login > img:last-child {
+    width: 30px;
+    height: 30px;
+
+    filter: invert(1);
+    cursor: pointer;
+
+    margin-right: 20px;
+}
+
+main > nav > div.container__bmw-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 10%;
+}
+
+main > div.container-info {
+    width: 100%;
+    height: 200px;
+
+    padding-top: 50px;
+    padding-left: 100px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+
+    color: rgb(255, 255, 255);
+}
+
+main > div.container-info > p:first-child {
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+main > div.container-info > p:nth-child(2) {
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+main > div.container-info > a:last-child {
+    width: 200px;
+    height: 50px;
+    background-color: rgb(0, 55, 255);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+}
+
+section.container-series {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0 50px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+section.container-series > h2 {
+    color:rgb(180, 180, 180);
+    font-size: 30px;
+
+    width: 80px;
+    height: 40px;
+
+    margin-top: 100px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgb(180, 180, 180);
+}
+
+section.container-series > ul.container__link-series {
+    width: 100%;
+    height: 40px;
+
+    margin-top: 50px;
+    padding: 20px 0 32px;
+    border-bottom: 2px solid rgb(180, 180, 180);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+section.container-series > ul.container__link-series > li > a {
+    color: rgb(180, 180, 180);
+    font-size: 20px;
+
+    transition: all ease 0.5s;
+}
+
+section.container-series > ul.container__link-series > li > a:hover {
+    border-bottom: 3px solid rgb(0, 55, 255);
+    font-size: 26px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+
+section.container-series > div.container__car-items {
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 50px;
+    align-items: center;
+    flex-wrap: wrap;
+
+    padding: 100px 0;
+} 
+
+section.container-series > div.container__car-items > div {
+    width: 300px;
+    height: 400px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+section.container-series > div.container__car-items > div > img {
+    width: 300px;
+    height: 150px;
+}
+
+section.container-series > div.container__car-items > div > p:nth-child(2) {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+section.container-series > div.container__car-items > div > p:nth-child(3) {
+    color:rgb(180, 180, 180);
+    font-size: 14px;
+
+    margin-bottom: 20px;
+}
+
+section.container-series > div.container__car-items > div > a:nth-child(4),
+section.container-series > div.container__car-items > div > a:last-child {
+    width: 100px;
+
+    color:rgb(0, 0, 0);
+    font-size: 16px;
+    margin-bottom: 5px;
+
+    transition: all ease 0.5s;
+}
+
+section.container-series > div.container__car-items > div > a:nth-child(4):hover,
+section.container-series > div.container__car-items > div > a:last-child:hover {
+    font-size: 18px;
+}
+
+section.container-cards {
+    width: 80%;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 100px;
+
+    padding: 0 0 100px;
+}
+
+section.container-cards > div.container__cards-up {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+
+section.container-cards > div.container__cards-up > div {
+    width: 220px;
+    height: 350px;
+    padding: 10px;
+    
+    display: flex;
+    flex-direction: column;
+
+    border: 2px solid rgb(237, 237, 237);
+}
+
+section.container-cards > div:first-child > div > img {
+    width: 200px;
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+section.container-cards > div:first-child > div > a:nth-child(2) {
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+section.container-cards > div:first-child > div > p:nth-child(3) {
+    margin: 10px 0;
+    color:rgb(180, 180, 180);
+}
+
+section.container-cards > div:first-child > div > a:last-child {
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+section.container-cards > div.container__cards-down {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+section.container-cards > div.container__cards-down > div {
+    width: 450px;
+    height: 370px;
+    padding: 10px;
+    
+    display: flex;
+    flex-direction: column;
+
+    border: 2px solid rgb(237, 237, 237);
+}
+
+section.container-cards > div.container__cards-down > div > img {
+    width: 420px;
+    height: 250px;
+}
+
+section.container-cards > div.container__cards-down > div > a:nth-child(2) {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+section.container-cards > div.container__cards-down > div > a:last-child {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+section.container-cards a:hover {
+    text-decoration: underline;
+}
+
+section.container-menu {
+    width: 80%;
+    margin: 0 auto 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3%;
+}
+
+section.container-menu > a {
+    width: 22%; 
+    height: 150px;
+
+    background-color: rgb(231, 231, 231);
+    color:rgb(0, 0, 0);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+section.container-menu > a > img {
+    width: 40px;
+    height: 40px;
+}
+
+section.container-menu > a > p {
+    text-align: center;
+    font-size: 12px;
+}
+
+footer {
+    width: 100%;
+    padding: 50px 0 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: rgb(180, 180, 180);
+}
+
+footer > div.border-footer {
+    width: 80%;
+    height: 2px;
+    background-color: rgb(143, 143, 143);
+    margin-bottom: 50px;
+}
+
+footer > div.container-list-links {
+    width: 80%;
+
+    padding-bottom: 50px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+footer > div.container-list-links > ul > li:first-child {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+footer > div.container-list-links > ul > li > a {
+    color: rgb(143, 143, 143);
+}
+
+footer > div.container-list-links > ul > li > a:hover {
+    text-decoration: underline;
+}
+
+footer > div.container-copyright {
+    width: 100%;
+
+    padding: 50px 0;
+
+    background-color: rgb(255, 255, 255);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+footer > div.container-copyright > div.content__copyright {
+    width: 20%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer > div.container-copyright > div.content__loyal-info {
+    width: 80%;
+
+    padding-right: 30px;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+}
+
+footer > div.container-copyright > div.content__loyal-info > a {
+    color:rgb(0, 55, 255);
+}
+
+footer > div.container-copyright > div.content__loyal-info > a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 991px) {
+    main > nav.container-nav-bar {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        min-width: 100%;
+    }
+
+    section.container-series > ul.container__link-series {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 10px;
+        align-items: flex-start;
+        flex-wrap: nowrap;
+
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    main > nav > div:first-child > ul.content__links {
+        display: none;
+    }
+
+    .content__icon-menu {
+        display: block;
+    }
+
+    main > nav > div:first-child > div.content__login {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    main > nav > div:first-child > div.content__login > img:first-child {
+        width: 30px;
+        height: 30px;
+    
+        filter: invert(1);
+        cursor: pointer;
+    
+        margin-right: 0px;
+    }
+
+    main > nav > div:first-child > div.content__login > img:nth-child(2) {
+        width: 30px;
+        height: 30px;
+    
+        filter: invert(1);
+        cursor: pointer;
+    
+        margin-right: 0px;
+    }
+
+    main > nav > div:first-child > div.content__login > img:last-child {
+        width: 30px;
+        height: 30px;
+    
+        filter: invert(1);
+        cursor: pointer;
+    
+        margin-right: 0px;
+    }
+
+    .container__cards-up {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .container__cards-down {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    section.container-cards > div:last-child > div {
+        width: 100%;
+    }
+
+    section.container-cards > div:last-child > div > img {
+        width: 100%;
+    }
+
+    footer > div.container-list-links {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    footer >  div.container-copyright {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        padding-left: 30px;
+    }
+
+    footer >  div.container-copyright > div.content__copyright {
+        width: 100%;
+        
+    }
+
+    footer >  div.container-copyright > div.content__loyal-info {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        margin-top: 30px;
+    }
+}
